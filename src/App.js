@@ -1,5 +1,5 @@
 import React from 'react';
-import ToDoItem from './todoItem';
+import ToDoItem from './singleTodo';
 
 const ToDoList=(props)=>{
     return (
@@ -7,7 +7,7 @@ const ToDoList=(props)=>{
             <tbody>
                 <tr>
                     <th>Task</th>
-                    <th>Completed</th>
+                    <th>Status</th>
                 </tr>
                 {
                     props.taskList.map(task=>{
