@@ -1,17 +1,19 @@
 import React,{ useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
+import ToDoList from './toDoList';
 
 const dummyTasks = [
-  {"id": 1,"task":"Bake a pie","completed":false},
-  {"id": 2,"task":"World domination","completed":false},
-  {"id": 3,"task":"Complete Fullstack HW","completed":false},
+  {"id": 1,"name":"Bake a pie","status":'active'},
+  {"id": 2,"name":"World domination","status":'active'},
+  {"id": 3,"name":"Complete Fullstack HW","status":'active'},
 ];
 
 const Main=()=>{
+  const [tasks,setTasks] = useState(dummyTasks);
   return(
     <div id='main-page-container'>
       <h1 id="header">To Do List</h1>
-      <p>Add to do list component here</p>
+      <ToDoList taskList={tasks}/>
     </div>
   );
 };
