@@ -1,9 +1,12 @@
 import React from 'react';
 
-const ToDoItem = () => {
+const ToDoItem = (props) => {
     return (
         <div>
-            <p>This is a to do list item component!</p>
+            <tr>
+                <td>{props.task.name}</td>
+                <td>{props.task.status}</td>
+            </tr>
         </div>
     );
 };

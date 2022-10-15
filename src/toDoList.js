@@ -1,4 +1,5 @@
 import React from 'react';
+import ToDoItem from './todoItem';
 
 const ToDoList=(props)=>{
     return (
@@ -11,10 +12,7 @@ const ToDoList=(props)=>{
                 {
                     props.taskList.map(task=>{
                         return (
-                            <tr>
-                                <td>{task.name}</td>
-                                <td>{task.status}</td>
-                            </tr>
+                            <ToDoItem row={task}/>
                         )
                     })
                 }
