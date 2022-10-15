@@ -1,3 +1,7 @@
-.completed{
+.todo-item{
+    cursor: pointer;
+}
+
+.crossedOut{
     text-decoration: line-through;
 }
