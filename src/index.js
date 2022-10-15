@@ -1,6 +1,6 @@
 import React,{ useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
-import ToDoList from './toDoList';
+import ToDoList from './todoList';
 
 const dummyTasks = [
   {"id": 1,"name":"Bake a pie","status":'active'},
