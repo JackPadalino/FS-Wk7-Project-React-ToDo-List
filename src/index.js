@@ -11,7 +11,7 @@ const dummyTasks = [
 const Main=()=>{
   const [tasks,setTasks] = useState(dummyTasks);
   return(
-    <div id='main-page-container'>
+    <div id='toDoList-container'>
       <h1 id="header">To Do List</h1>
       <ToDoList tasks={tasks}/>
     </div>
