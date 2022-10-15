@@ -1,5 +1,5 @@
 import React,{ useEffect, useState } from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import ToDoList from './todoList';
 
 const dummyTasks = [
@@ -18,7 +18,6 @@ const Main=()=>{
   );
 };
 
-ReactDOM.render(
-  <Main/>,
-  document.getElementById('main-page-container')
-);
+const container = document.getElementById('main-page-container');
+const root = createRoot(container);
+root.render(<Main/>);

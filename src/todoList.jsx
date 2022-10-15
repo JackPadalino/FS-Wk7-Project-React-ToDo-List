@@ -3,21 +3,16 @@ import ToDoItem from './todoItem';
 
 const ToDoList=(props)=>{
     return (
-        <table>
-            <tbody>
-                <tr>
-                    <th>Task</th>
-                    <th>Status</th>
-                </tr>
-                {
-                    props.taskList.map(task=>{
-                        return (
-                            <ToDoItem row={task}/>
-                        )
-                    })
-                }
-            </tbody>
-        </table>
+        <div>
+            <h1>Task</h1>
+            {
+                props.tasks.map(task=>{
+                    return (
+                        <ToDoItem task={task}/>
+                    )
+                })
+            }
+        </div>
     );
 };
 

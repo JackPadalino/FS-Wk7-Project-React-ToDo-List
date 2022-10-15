@@ -1,11 +1,13 @@
-import React from 'react';
+import React,{useState} from 'react';
 
 const ToDoItem = (props) => {
+    const [completed,setCompleted] = useState(false);
+    const updateStatus=(event)=>{
+        setCompleted(!completed);
+        completed ? event.target.classList.add('crossedOut'):event.target.classList.remove('crossedOut');
+    };
     return (
-        <tr>
-            <td>{props.row.name}</td>
-            <td>{props.row.status}</td>
-        </tr>
+        <div class="todo-item" onClick={updateStatus}>{props.task.name}</div>
     );
 };
 
