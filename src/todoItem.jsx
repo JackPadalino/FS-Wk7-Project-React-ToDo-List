@@ -1,9 +1,11 @@
 import React,{useState} from 'react';
 
+// component stylings
 const crossedOut={
     textDecoration:'line-through'
 };
 
+// component for a single to-do list item
 const ToDoItem = (props) => {
     const [completed,setCompleted] = useState(false);
     const updateStatus=()=>{
