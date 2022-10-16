@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import Filter from './filter';
+import Filter from './filter'; // importing the filter component
 
 const Main=()=>{
   return(

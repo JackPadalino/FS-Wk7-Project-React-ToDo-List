@@ -5,7 +5,7 @@ const dummyTasks = [
     {"id": 1,"name":"Bake a pie"},
     {"id": 2,"name":"World domination"},
     {"id": 3,"name":"Complete Fullstack HW"},
-    {"id": 4,"name":"Flying lessons"},
+    {"id": 4,"name":"Run for mayor"},
     {"id": 5,"name":"Practice my head spins"},
   ];
 
