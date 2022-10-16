@@ -1,0 +1,52 @@
+body{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(251,206,63);
+    background: radial-gradient(circle, rgba(251,206,63,1) 0%, rgba(252,70,107,1) 100%);
+}
+
+.toDoContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+    width:500px;
+    border: 1px solid lightgrey;
+    padding:15px;
+    border-radius: 20px;
+    background-color: #FAF9F6;
+}
+
+.toDoListHeader{
+    text-align: center;
+    font-size: 50px;
+    margin:0px;
+    font-family: 'Varela Round';
+}
+
+.toDoList{
+    display:flex;
+    flex-direction: column;
+}
+
+.toDoItem{
+    font-size: 30px;
+    font-family: 'Varela Round';
+    cursor: pointer;
+}
+
+.filterContainer{
+    display:flex;
+    justify-content: center;
+    gap:10px;
+}
+
+.filterButton{
+    width:100px;
+    height:25px;
+    border-radius:5px;
+    font-size: 15px;
+}

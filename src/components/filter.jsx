@@ -5,10 +5,10 @@ const Filter = (props) => {
         props.setFilter(event.target.value);
     }
     return (
-        <div id='buttonDiv'>
-            <button value="All" onClick={updateFilter}>All</button>
-            <button value="Completed" onClick={updateFilter}>Completed</button>
-            <button value="Active" onClick={updateFilter}>Active</button>
+        <div className='filterContainer'>
+            <button className="filterButton" value="All" onClick={updateFilter}>All</button>
+            <button className="filterButton" value="Completed" onClick={updateFilter}>Completed</button>
+            <button className="filterButton" value="Active" onClick={updateFilter}>Active</button>
         </div>
     );
 };

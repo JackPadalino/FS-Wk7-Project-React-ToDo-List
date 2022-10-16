@@ -1,8 +1,10 @@
 import React,{useState} from 'react';
 
 // component stylings
-const crossedOut={
-    textDecoration:'line-through'
+const completedStyle={
+    textDecoration:'line-through',
+    opacity:0.25,
+    fontStyle:'italic'
 };
 
 // component for a single to-do list item
@@ -14,17 +16,17 @@ const ToDoItem = (props) => {
     };
     if(props.filter==='All'){
         return (
-            <div style={completed?crossedOut:null} onClick={updateCompleted}>{props.name}</div>
+            <div className="toDoItem" style={completed?completedStyle:null} onClick={updateCompleted}>{props.name}</div>
         );
     };
     if(props.filter==='Completed' && completed){
         return (
-            <div style={completed?crossedOut:null} onClick={updateCompleted}>{props.name}</div>
+            <div className="toDoItem" style={completed?completedStyle:null} onClick={updateCompleted}>{props.name}</div>
         );
     };
     if(props.filter==='Active' && !completed){
         return (
-            <div style={completed?crossedOut:null} onClick={updateCompleted}>{props.name}</div>
+            <div className="toDoItem" style={completed?completedStyle:null} onClick={updateCompleted}>{props.name}</div>
         );
     };
 };

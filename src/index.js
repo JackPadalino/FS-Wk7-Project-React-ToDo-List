@@ -16,9 +16,9 @@ const Main=()=>{
   const [tasks,setTasks] = useState(dummyTasks);
   const [filter,setFilter] = useState('All');
   return(
-    <div id='toDoList-container'>
-      <h1 id="header">To Do List</h1>
-      <div className='todoList'>
+    <div className='toDoContainer'>
+      <h1 className="toDoListHeader">To Do List</h1>
+      <div className='toDoList'>
       {
         tasks.map(task=>{
           return (
@@ -32,6 +32,6 @@ const Main=()=>{
   );
 };
 
-const container = document.getElementById('main-page-container');
+const container = document.getElementById('root');
 const root = createRoot(container);
 root.render(<Main/>);
