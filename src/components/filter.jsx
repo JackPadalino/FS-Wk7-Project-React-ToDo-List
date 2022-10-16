@@ -1,5 +1,9 @@
 import React,{useState} from 'react';
 
+// This Filter component contains buttons that can change the state 'filter'
+// of the Main component. This component inherits the 'setFilter' function
+// from the Main component, and uses it to change the 'filter' state when
+// a button is pressed.
 const Filter = (props) => {
     const updateFilter=(event)=>{
         props.setFilter(event.target.value);
