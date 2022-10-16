@@ -1,13 +1,19 @@
 import React,{useState} from 'react';
 
+// component stylings
+const crossedOut={
+    textDecoration:'line-through'
+};
+
+// component for a single to-do list item
 const ToDoItem = (props) => {
     const [completed,setCompleted] = useState(false);
-    const updateStatus=(event)=>{
+    const updateStatus=()=>{
         setCompleted(!completed);
-        completed ? event.target.classList.add('crossedOut'):event.target.classList.remove('crossedOut');
+        //completed?setCompleted(false):setCompleted(true);
     };
     return (
-        <div class="todo-item" onClick={updateStatus}>{props.task.name}</div>
+        <div style={completed?crossedOut:null} onClick={updateStatus}>{props.task.name}</div>
     );
 };
 

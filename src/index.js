@@ -4,7 +4,7 @@ import Filter from './filter';
 
 const Main=()=>{
   return(
-    <div id='main-page-container'>
+    <div id='toDoList-container'>
       <h1 id="header">To Do List</h1>
       <Filter/>
     </div>
