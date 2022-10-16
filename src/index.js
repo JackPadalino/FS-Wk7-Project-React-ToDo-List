@@ -13,20 +13,21 @@ const dummyTasks = [
 ];
 
 const Main=()=>{
-  const [tasks,setTasks] = useState(dummyTasks); 
+  const [tasks,setTasks] = useState(dummyTasks);
+  const [filter,setFilter] = useState('All');
   return(
     <div id='toDoList-container'>
       <h1 id="header">To Do List</h1>
-      <Filter/>
       <div className='todoList'>
-        {
-          tasks.map(task=>{
-            return (
-              <ToDoItem key={task} name={task}/> // using component for to do list items
-            )
-          })
-        }
-        </div>
+      {
+        tasks.map(task=>{
+          return (
+            <ToDoItem key={task} name={task} filter={filter}/> // using component for to do list items
+          )
+        })
+      }
+      </div>
+      <Filter filter={filter} setFilter={setFilter}/>
     </div>
   );
 };
