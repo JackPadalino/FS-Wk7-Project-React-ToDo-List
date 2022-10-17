@@ -54,4 +54,5 @@ body{
     background-color: rgb(251,206,63);
     font-family: 'Varela Round';
     border:1px solid black;
+    cursor: pointer;
 }
